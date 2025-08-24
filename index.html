@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Justin Adame - Front-End Developer</title>
+  <link rel="stylesheet" href="portfolio.css" />
+  <script src="https://kit.fontawesome.com/25b124d258.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="personal__logo">Justin Adame</div>
+      
+      <div class="nav-right">
+        <button id="theme-toggle" aria-label="Toggle light/dark mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        
+        <ul class="nav__link--list">
+          <li><a href="#about" class="nav__link--anchor">About</a></li>
+          <li><a href="#skills" class="nav__link--anchor">Skills</a></li>
+          <li><a href="#projects" class="nav__link--anchor">Projects</a></li>
+          <li><a href="mailto:jradame@gmail.com" class="nav__link--anchor nav__link--anchor-primary">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="main-content">
+    
+    <!-- Hero Intro Section -->
+    <section id="about" class="hero-section">
+      <div class="intro-container">
+        <div class="intro-profile">
+          <img src="./assets/vanme copy.JPG" class="profile-image" alt="Justin Adame" />
+        </div>
+        <div class="intro-text">
+          <h1 class="hero-title">Hey! I'm <span class="text--red">Justin</span></h1>
+          <p class="hero-description">
+            Passionate web developer specializing in 
+            <strong class="text--red">front-end development and user experience design.</strong>
+            I love creating responsive, accessible websites that deliver great user experiences.
+          </p>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/justin-adame" class="social-link" target="_blank" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/justin-adame" class="social-link" target="_blank" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="mailto:jradame@gmail.com" class="social-link" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="skills-container">
+        <div class="skills-left">
+          <h2 class="skills-title">Skills &<br>Technologies</h2>
+        </div>
+        <div class="skills-right">
+          <div id="skills-container" class="skills-grid"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div id="projects-container" class="projects-grid">
+          <p class="coming-soon">Projects coming soon...</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Justin Adame. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="portfolio-data.js"></script>
+  <script src="portfolio.js"></script>
+  <script src="theme-toggle.js" defer></script>
+  
+  <script>
+    const myPortfolio = new Portfolio(portfolioData);
+  </script>
+</body>
+
+</html>
+
