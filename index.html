@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,18 +7,14 @@
   <link rel="stylesheet" href="portfolio.css" />
   <script src="https://kit.fontawesome.com/25b124d258.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-  <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
       <div class="personal__logo">Justin Adame</div>
-      
       <div class="nav-right">
         <button id="theme-toggle" aria-label="Toggle light/dark mode">
           <i class="fa-solid fa-moon"></i>
         </button>
-        
         <ul class="nav__link--list">
           <li><a href="#about" class="nav__link--anchor">About</a></li>
           <li><a href="#skills" class="nav__link--anchor">Skills</a></li>
@@ -31,8 +26,6 @@
   </nav>
 
   <main class="main-content">
-    
-    <!-- Hero Intro Section -->
     <section id="about" class="hero-section">
       <div class="intro-container">
         <div class="intro-profile">
@@ -60,7 +53,6 @@
       </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="skills-section">
       <div class="skills-container">
         <div class="skills-left">
@@ -72,7 +64,6 @@
       </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="projects-section">
       <div class="container">
         <h2 class="section-title">Featured Projects</h2>
@@ -81,25 +72,18 @@
         </div>
       </div>
     </section>
-
   </main>
 
-  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <p>&copy; 2025 Justin Adame. All rights reserved.</p>
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="portfolio-data.js"></script>
   <script src="portfolio.js"></script>
   <script src="theme-toggle.js" defer></script>
-  
-  <script>
-    const myPortfolio = new Portfolio(portfolioData);
-  </script>
+  <script>const myPortfolio = new Portfolio(portfolioData);</script>
 </body>
-
 </html>
 
